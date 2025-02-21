@@ -1,0 +1,38 @@
+.skills-slider {
+    position: relative;
+  }
+  
+  .skills-slider-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: slide 20s linear infinite;
+  }
+  
+  .skills-slider-inner.paused {
+    animation-play-state: paused;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+  }
+  
+  button:hover {
+    color: #f3f3f3;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
