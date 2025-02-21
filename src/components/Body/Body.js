@@ -5,8 +5,8 @@ const Body = () => {
   return (
     <div className="flex flex-col md:flex-row items-center p-6 bg-gray-100 dark:bg-gray-800 min-h-screen">
       <div className="flex-1 max-w-lg pl-4 md:pl-8 mb-8 md:mb-0">
-        <p className="text-lg leading-relaxed  text-gray-700 dark:text-gray-300 animate-fadeInSlideUp mb-6">
-          <span className="text-4xl">Hi, I'm Aman Wadgaonkar,</span>
+        <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 animate-fadeInSlideUp mb-6">
+          <span className="text-4xl font-bold">Hi, I'm Aman Wadgaonkar,</span>
           <br></br>
           <p className="text-2xl">
             A passionate developer with experience in React.js and a love for
@@ -16,15 +16,24 @@ const Body = () => {
             feel free to reach out!
           </p>
         </p>
-        <div className="flex items-center justify-start mb-6">
+
+        <div className="flex items-center justify-start mb-6 space-x-4">
           <a
-            href="mailto:amanwadgaonkar8593@gmail.com" // Replace with your actual email address
+            href="mailto:amanwadgaonkar8593@gmail.com"
             className="px-6 py-3 bg-blue-600 dark:bg-blue-400 text-white dark:text-gray-900 font-semibold rounded-md shadow-lg hover:bg-blue-700 dark:hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-lg"
           >
             Hire Me
           </a>
+          <a
+            href="/resume.pdf" // Update with the correct path to your resume file
+            download
+            className="px-6 py-3 bg-gray-800 dark:bg-gray-600 text-white dark:text-gray-900 font-semibold rounded-md shadow-lg hover:bg-gray-900 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 text-lg"
+          >
+            Download Resume
+          </a>
         </div>
-        <div className="flex-col justify-center space-x-4">
+
+        <div className="flex space-x-4">
           <a
             href="https://github.com/Aman8593"
             target="_blank"
@@ -51,8 +60,9 @@ const Body = () => {
           </a>
         </div>
       </div>
+
       <div className="flex-1 flex justify-center items-center">
-        <SkillsCube /> {/* Replace the image with the SkillsCube component */}
+        <SkillsCube />
       </div>
     </div>
   );
