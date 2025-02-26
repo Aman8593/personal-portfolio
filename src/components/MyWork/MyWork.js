@@ -8,7 +8,6 @@ const projects = {
       description: 'A role-based access control(RBAC) admin dashboard built with Next.js for efficient user, role and permission management.',
       image: 'webd-project1.png',
       githubLink: 'https://github.com/Aman8593/RBAC-UI.git',
-      
     },
     {
       title: 'Tesla Clone',
