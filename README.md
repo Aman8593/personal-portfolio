@@ -1,49 +1,212 @@
-# Getting Started with Create React App
+# Aman Wadgaonkar - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and Tailwind CSS, showcasing my professional experience, projects, and skills as a software developer.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully responsive layout that works seamlessly across desktop, tablet, and mobile devices
+- **Dark/Light Mode**: Toggle between dark and light themes with persistent user preference
+- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Single Page Application**: Fast navigation with React Router DOM
+- **Interactive Components**: Engaging user interface with hover effects and animations
+- **Professional Sections**:
+  - Home/Landing page with introduction
+  - About section with personal background
+  - Experience showcase with detailed internship information
+  - Projects portfolio with live demos and source code links
+  - Contact form for professional inquiries
 
-### `npm start`
+## 🚀 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend Framework**: React 19.0.0
+- **Styling**: Tailwind CSS 3.4.17
+- **Routing**: React Router DOM 7.2.0
+- **Animations**: Framer Motion 12.4.7
+- **Icons**: FontAwesome 6.7.2
+- **HTTP Client**: Axios 1.7.9
+- **Notifications**: React Toastify 11.0.3
+- **Build Tool**: Create React App 5.0.1
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+src/
+├── components/
+│   ├── About/
+│   │   ├── About.js
+│   │   └── About.css
+│   ├── Body/
+│   │   ├── Body.js
+│   │   ├── SkillsCube.js
+│   │   ├── SkillsCube.css
+│   │   └── developer.webp
+│   ├── Contact/
+│   │   └── Contact.js
+│   ├── Experience/
+│   │   └── Experience.js
+│   ├── Header/
+│   │   ├── Header.js
+│   │   └── ThemeToggle.js
+│   └── MyWork/
+│       └── MyWork.js
+├── App.js
+├── App.css
+├── index.js
+└── index.css
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Installation & Setup
 
-### `npm run build`
+1. **Clone the repository**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone <repository-url>
+   cd my-app
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+   The application will open at [http://localhost:3000](http://localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📜 Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **`npm start`**: Runs the app in development mode
+- **`npm test`**: Launches the test runner in interactive watch mode
+- **`npm run build`**: Builds the app for production to the `build` folder
+- **`npm run eject`**: Ejects from Create React App (one-way operation)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎨 Key Components
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Header Component
 
-## Learn More
+- Navigation menu with smooth scrolling
+- Theme toggle functionality
+- Responsive mobile menu
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Experience Component
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Detailed internship information
+- Technology tags for each role
+- Responsive card layout
+- Dark/light mode support
+
+### Projects Component (MyWork)
+
+- Project showcase with images
+- Live demo and source code links
+- Technology stack for each project
+
+### Contact Component
+
+- Professional contact form
+- Social media links
+- Contact information
+
+## 🌙 Dark Mode Implementation
+
+The application features a comprehensive dark mode implementation using Tailwind CSS:
+
+- Persistent theme preference using localStorage
+- Smooth transitions between themes
+- Consistent styling across all components
+- System preference detection
+
+## 📱 Responsive Design
+
+- **Mobile-first approach** with Tailwind CSS
+- **Breakpoint optimization** for all screen sizes
+- **Touch-friendly interface** for mobile devices
+- **Flexible grid layouts** that adapt to different viewports
+
+## 🚀 Deployment
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Deploy to Netlify/Vercel
+
+1. Build the project using `npm run build`
+2. Upload the `build` folder to your hosting platform
+3. Configure routing for single-page application
+
+### Deploy to GitHub Pages
+
+```bash
+npm install --save-dev gh-pages
+```
+
+Add to package.json:
+
+```json
+"homepage": "https://yourusername.github.io/repository-name",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+
+## 🔧 Customization
+
+### Adding New Sections
+
+1. Create a new component in `src/components/`
+2. Add routing in `App.js`
+3. Update navigation in `Header.js`
+
+### Modifying Styles
+
+- Edit Tailwind classes directly in components
+- Customize theme in `tailwind.config.js`
+- Add custom CSS in component-specific CSS files
+
+### Environment Variables
+
+Create a `.env` file in the root directory for environment-specific configurations:
+
+```
+REACT_APP_API_URL=your_api_url
+REACT_APP_EMAIL_SERVICE=your_email_service
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Aman Wadgaonkar**
+
+- Portfolio: [Your Portfolio URL]
+- LinkedIn: [Your LinkedIn Profile]
+- GitHub: [Your GitHub Profile]
+- Email: [Your Email]
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Support
+
+If you have any questions or need help with setup, feel free to reach out through the contact form on the website or create an issue in this repository.
+
+---
+
+⭐ **Star this repository if you found it helpful!**
 
 ### Code Splitting
 

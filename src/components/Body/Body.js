@@ -4,17 +4,17 @@ import SkillsCube from "./SkillsCube"; // Import the SkillsCube component
 
 const Body = () => {
   return (
-    <motion.div 
-      className="flex flex-col md:flex-row items-center p-6 bg-gray-100 dark:bg-gray-800 min-h-screen"
-      initial={{ opacity: 0, y: 50 }} 
-      animate={{ opacity: 1, y: 0 }} 
+    <motion.div
+      className="flex flex-col md:flex-row items-center px-4 py-4 md:px-8 md:py-6 bg-gray-100 dark:bg-gray-800 h-[calc(100vh-4rem)]"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
       <div className="flex-1 max-w-lg pl-4 md:pl-8 mb-8 md:mb-0">
-        <motion.p 
+        <motion.p
           className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 animate-fadeInSlideUp mb-6"
-          initial={{ opacity: 0, scale: 0.8 }} 
-          animate={{ opacity: 1, scale: 1 }} 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         >
           <span className="text-4xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-lg">
@@ -78,10 +78,10 @@ const Body = () => {
         </div>
       </div>
 
-      <motion.div 
+      <motion.div
         className="flex-1 flex justify-center items-center"
-        initial={{ opacity: 0, scale: 0.8 }} 
-        animate={{ opacity: 1, scale: 1 }} 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
         <SkillsCube />

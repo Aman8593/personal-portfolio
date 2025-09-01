@@ -1,111 +1,160 @@
 import React from "react";
-import "./About.css"; // Import the custom CSS file
+import "./About.css";
 
 const About = () => {
+  const skills = [
+    {
+      icon: "fab fa-react",
+      name: "React",
+      color: "text-blue-600 dark:text-blue-400",
+    },
+    {
+      icon: "fab fa-js",
+      name: "JavaScript",
+      color: "text-yellow-500 dark:text-yellow-400",
+    },
+    {
+      icon: "fab fa-python",
+      name: "Python",
+      color: "text-blue-500 dark:text-blue-300",
+    },
+    {
+      icon: "fab fa-css3",
+      name: "CSS",
+      color: "text-blue-600 dark:text-blue-400",
+    },
+    {
+      icon: "fas fa-database",
+      name: "SQL",
+      color: "text-green-600 dark:text-green-400",
+    },
+    {
+      icon: "fab fa-cuttlefish",
+      name: "C++",
+      color: "text-gray-700 dark:text-gray-300",
+    },
+    {
+      icon: "fas fa-database",
+      name: "MongoDB",
+      color: "text-green-600 dark:text-green-400",
+    },
+    {
+      icon: "fab fa-linux",
+      name: "Linux",
+      color: "text-black dark:text-gray-400",
+    },
+    {
+      icon: "fab fa-git",
+      name: "Git",
+      color: "text-orange-600 dark:text-orange-400",
+    },
+    {
+      icon: "fab fa-tailwindcss",
+      name: "Tailwind CSS",
+      color: "text-blue-400 dark:text-blue-300",
+    },
+    {
+      icon: "fab fa-aws",
+      name: "AWS",
+      color: "text-orange-500 dark:text-orange-400",
+    },
+    {
+      icon: "fab fa-docker",
+      name: "Docker",
+      color: "text-blue-500 dark:text-blue-400",
+    },
+    {
+      icon: "fas fa-cogs",
+      name: "DevOps",
+      color: "text-gray-700 dark:text-gray-300",
+    },
+  ];
 
   return (
-    <div className="flex flex-col h-screen p-8 bg-gray-100 dark:bg-gray-800">
-      <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-        About Me
-      </h1>
-      <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-8">
-        Hi, I'm Aman Wadgaonkar, a passionate developer with experience in
-        React.js and a love for creating dynamic and responsive web
-        applications. I’m currently studying at MIT Academy of Engineering in
-        the Computer Engineering program. Along with front-end development, I
-        have a strong foundation in AWS and DevOps, enabling me to design
-        scalable cloud architectures and automate deployment processes
-        efficiently. I am skilled in containerization, CI/CD pipelines, and
-        infrastructure as code, ensuring seamless and reliable application
-        deployments. I am always eager to learn and explore new tools and
-        frameworks to enhance my skill set.
-      </p>
-      <div className="relative mt-16 h-64 overflow-hidden">
-        <div className="skills-slider w-full h-full">
-          <div className="skills-slider-inner flex items-center space-x-16 animate-slide">
-            {/* Original and Duplicate Items for a Smooth Loop */}
-            {[...Array(2)].map((_, index) => (
-              <React.Fragment key={index}>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-react text-8xl text-blue-600 dark:text-blue-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    React
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-js text-8xl text-yellow-500 dark:text-yellow-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    JavaScript
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-python text-8xl text-blue-500 dark:text-blue-300"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    Python
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-css3 text-8xl text-blue-600 dark:text-blue-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    CSS
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fas fa-database text-8xl text-green-600 dark:text-green-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    SQL
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-cuttlefish text-8xl text-gray-700 dark:text-gray-300"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    C++
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fas fa-database text-8xl text-green-600 dark:text-green-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    MongoDB
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-linux text-8xl text-black dark:text-gray-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    Linux
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-git text-8xl text-orange-600 dark:text-orange-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    Git
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-tailwindcss text-8xl text-blue-400 dark:text-blue-300"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    Tailwind CSS
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-aws text-8xl text-orange-500 dark:text-orange-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    AWS
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fab fa-docker text-8xl text-blue-500 dark:text-blue-400"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    Docker
-                  </span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <i className="fas fa-cogs text-8xl text-gray-700 dark:text-gray-300"></i>
-                  <span className="mt-2 text-xl text-gray-900 dark:text-gray-100">
-                    DevOps
-                  </span>
-                </div>
-              </React.Fragment>
-            ))}
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+            About Me
+          </h1>
+          <div className="w-24 h-1 bg-blue-600 dark:bg-blue-400 mx-auto mb-8"></div>
+        </div>
+
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 mb-12">
+          <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+            I'm Aman Wadgaonkar, a Computer Science graduate from MIT Academy of
+            Engineering with expertise in C++, Python, React, AI, DevOps, and
+            AWS cloud services. I specialize in building scalable cloud
+            architectures and automating development workflows through CI/CD
+            pipelines and infrastructure automation. My experience includes
+            deploying applications across cloud environments and implementing
+            efficient DevOps practices. A highlight of my work is a fintech
+            application that combines AI, web scraping, and data processing
+            capabilities. Through various full-stack projects, I've developed
+            strong problem-solving skills and the ability to design end-to-end
+            solutions for real-world challenges. I'm passionate about leveraging
+            technology to solve complex problems and continuously exploring
+            innovations in cloud computing, AI, and modern web development.
+          </p>
+        </div>
+
+        {/* Skills Section */}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 text-center mb-8">
+            Technologies & Skills
+          </h2>
+
+          {/* Skills Slider */}
+          <div className="relative overflow-hidden bg-white dark:bg-gray-800 rounded-lg shadow-lg py-8">
+            <div className="skills-slider">
+              <div className="skills-slider-inner flex items-center">
+                {/* Render skills multiple times for seamless loop */}
+                {[...Array(3)].map((_, setIndex) => (
+                  <React.Fragment key={setIndex}>
+                    {skills.map((skill, index) => (
+                      <div
+                        key={`${setIndex}-${index}`}
+                        className="flex flex-col items-center mx-4 sm:mx-6 md:mx-8 flex-shrink-0"
+                      >
+                        <i
+                          className={`${skill.icon} text-4xl sm:text-5xl md:text-6xl lg:text-7xl ${skill.color} mb-2`}
+                        ></i>
+                        <span className="text-xs sm:text-sm md:text-base text-gray-900 dark:text-gray-100 text-center whitespace-nowrap">
+                          {skill.name}
+                        </span>
+                      </div>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Info Cards */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+              Education
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              BTech in Computer Engineering
+              <br />
+              MIT Academy of Engineering
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+              Focus Areas
+            </h3>
+            <ul className="text-gray-700 dark:text-gray-300 space-y-1">
+              <li>• Full-Stack Development</li>
+              <li>• Cloud Architecture (AWS)</li>
+              <li>• DevOps & CI/CD</li>
+              <li>• Containerization</li>
+              <li>• Gen AI</li>
+            </ul>
           </div>
         </div>
       </div>

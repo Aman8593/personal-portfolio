@@ -1,38 +1,38 @@
 .skills-slider {
-    position: relative;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skills-slider-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: slide 30s linear infinite;
+  width: max-content;
+}
+
+.skills-slider-inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
   .skills-slider-inner {
-    display: flex;
-    flex-wrap: nowrap;
-    animation: slide 20s linear infinite;
+    animation-duration: 25s;
   }
-  
-  .skills-slider-inner.paused {
-    animation-play-state: paused;
+}
+
+@media (max-width: 480px) {
+  .skills-slider-inner {
+    animation-duration: 20s;
   }
-  
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  button {
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-size: 1.5rem;
-  }
-  
-  button:hover {
-    color: #f3f3f3;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
+}

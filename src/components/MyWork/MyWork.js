@@ -25,6 +25,15 @@ const projects = {
       githubLink: "https://github.com/Aman8593/Ai-image-gallery.git",
     },
   ],
+  Fintech: [
+    {
+      title: "Stock Sage",
+      description:
+        "Built an AI-driven fintech application using React, FastAPI, and MongoDB featuring real-time sentiment analysis, options strategies PNL, technical indicators, and personalized trading recommendations.",
+      image: "fintech-app.png",
+      githubLink: "https://github.com/Aman8593/Stock-Market-Dashboard.git",
+    },
+  ],
   Cloud: [
     {
       title: "E-commerce car selling website",
@@ -65,16 +74,6 @@ const projects = {
         "https://colab.research.google.com/drive/1lpBmr8sMIwynS4rNulXBqTMJmUg4WX4B#scrollTo=QuPrq8v4Pybq",
     },
   ],
-  // deeplearning: [
-  //   {
-  //     title: 'Project 1',
-  //     description: 'Description for Deep Learning Project 1',
-  //     image: 'https://via.placeholder.com/300',
-  //     githubLink: 'https://github.com/your-repo/project1',
-
-  //   },
-
-  // ],
 };
 
 const Work = () => {
