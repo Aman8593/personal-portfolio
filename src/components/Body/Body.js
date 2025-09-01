@@ -5,7 +5,7 @@ import SkillsCube from "./SkillsCube"; // Import the SkillsCube component
 const Body = () => {
   return (
     <motion.div
-      className="flex flex-col md:flex-row items-center px-4 py-4 md:px-8 md:py-6 bg-gray-100 dark:bg-gray-800 h-[calc(100vh-4rem)]"
+      className="flex flex-col md:flex-row items-center p-6 bg-gray-100 dark:bg-gray-800 min-h-screen"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
